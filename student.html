@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Student Registration</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Chirantan">
+
+<script>
+
+function checkforblank() {
+		if(document.getElementById('studid').value=="") {
+			alert('Please enter Student ID');
+			return false;
+		}
+		else if(document.getElementById('fullname').value=="") {
+			alert('Please enter Full Name');
+			return false;
+		}
+		else if(document.getElementById('firstname').value=="") {
+			alert('Please enter First Name');
+			return false;
+		}
+		else if(document.getElementById('lastname').value=="") {
+			alert('Please enter Last Name');
+			return false;
+		}
+		else {
+			alert('Registered Successfully');
+			return false;
+		}
+	
+	}
+</script>
+
+</head>
+<body>
+	<div align="center">
+	<h1>Student Registration</h1>
+ 	
+	<form method="post" action="#" onsubmit="return checkforblank()">
+	<fieldset>
+	<label>Student ID:
+	<input type="text" id="studid" name="student ID"></label>
+	<br>
+	<label>Full Name:
+	<input type="text" id="fullname" name="student name"></label>
+	<br>
+	<label>First Name:
+	<input type="text" id="firstname" name="first name"></label>
+	<br>	
+	<label>Last Name:
+	<input type="text" id="lastname" name="last name"></label>
+	<br>
+	<p>All the fields are mandatory.</p>
+	
+	<input type="submit" value="Register">
+	</fieldset>
+	</form>
+	</div>
+
+</body>
+</html>
